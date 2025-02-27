@@ -1,6 +1,4 @@
 const dark_mode_buttons = document.querySelectorAll(".dark-mode-button");
-const nav_buttons = document.querySelectorAll(".nav-button");
-
 dark_mode_buttons.forEach((button) => {
     button.addEventListener("click", () => {
         var nav_button;

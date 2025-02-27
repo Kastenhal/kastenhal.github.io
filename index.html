@@ -21,11 +21,18 @@
             }
 
             .nav-button {
+                transition: transform 0.2s ease;
                 background: url(/assets/CrownDark.png);
-                background-size: contain; 
-                width: 90px; 
-                height: 90px; 
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 90px;
+                height: 90px;
                 border: 0px none white;
+            }
+
+            .nav-button:hover {
+                transform: scale(1.33);
             }
 
             .dark-mode-container {
@@ -33,11 +40,18 @@
             }
 
             .dark-mode-button {
+                transition: transform 0.2s ease;
                 background: url(/assets/DotDark.png);
-                background-size: contain; 
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
                 width: 24px;
                 height: 26px;
                 border: 0px none white;
+            }
+
+            .dark-mode-button:hover {
+                transform: scale(1.475);
             }
 
         </style>
@@ -46,7 +60,7 @@
         <div class="container">
             <div class="nav-container">
                 <button class="nav-button"></button>
-                <script src="/scripts/button-listener.js" defer></script>
+                <script src="/scripts/nav-listener.js" defer></script>
             </div>
  
             <div class="dark-mode-container">

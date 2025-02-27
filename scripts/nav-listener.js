@@ -1,6 +1,6 @@
-const buttons = document.querySelectorAll(".nav-button");
+const nav_buttons = document.querySelectorAll(".nav-button");
 
-buttons.forEach((button, index) => {
+nav_buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
     
   });
