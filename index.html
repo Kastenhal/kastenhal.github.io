@@ -14,16 +14,14 @@
 
             .container {
                 display: flex;
-                justify-content: center;
+                flex-direction:column;
                 align-items: center;
                 height: 100vh;
             }
 
             .nav-container {
-                display: flex;
                 position: relative;
-                justify-content: center;
-                align-items: center;
+                margin: auto;
                 border: 1px solid black;
             }
 
@@ -37,17 +35,16 @@
 
             .dark-mode-container {
                 padding: 10px;
-                margin: auto;
-                width: 30px;
-                height: 30px;
-                border: 0px solid black;
+                width: 15px;
+                height: 16px;
+                border: 1px solid black;
             }
 
             .dark-mode-button {
                 background: url(/assets/DotDark.png);
                 background-size:contain; 
-                width: 30px;
-                height: 32px;
+                width: 15px;
+                height: 16px;
                 border: 0px none white;
             }
 
@@ -59,10 +56,11 @@
                 <button class="nav-button"></button>
                 <script src="/scripts/button-listener.js" defer></script>
             </div>
-        </div>
-
-        <div class="dark-mode-container">
-            <button class="dark-mode-button"></button>
+ 
+            <div class="dark-mode-container">
+                <button class="dark-mode-button"></button>
+                <script src="/scripts/dark-mode-listener.js" defer></script>
+            </div>
         </div>
     </body>
 </html>
