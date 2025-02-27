@@ -5,68 +5,21 @@
         <title>Markus Smith's Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            @import url('/styles/main.css');
-
-            .container {
-                display: flex;
-                flex-direction:column;
-                align-items: center;
-                height: 95vh;
-            }
-
-            .nav-container {
-                margin: auto;
-                border: 0px solid black;
-            }
-
-            .nav-button {
-                transition: transform 0.2s ease;
-                background: url(/assets/CrownDark.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 90px;
-                height: 90px;
-                border: 0px none white;
-            }
-
-            .nav-button:hover {
-                transform: scale(1.33);
-            }
-
-            .dark-mode-container {
-                border: 0px solid black;
-            }
-
-            .dark-mode-button {
-                transition: transform 0.2s ease;
-                background: url(/assets/DotDark.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 24px;
-                height: 26px;
-                border: 0px none white;
-            }
-
-            .dark-mode-button:hover {
-                transform: scale(1.475);
-            }
-
-        </style>
+        <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
         <div class="container">
-            <div class="nav-container">
-                <button class="nav-button"></button>
-                <script src="/scripts/nav-listener.js" defer></script>
-            </div>
- 
-            <div class="dark-mode-container">
-                <button class="dark-mode-button"></button>
-                <script src="/scripts/dark-mode-listener.js" defer></script>
-            </div>
+            <button id="menuButton" class="menu-button">
+                <img src="/assets/CrownDark.png">
+            </button>
+            <nav id="navMenu" class="nav-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </div>
+        <script src="/scripts/script.js"></script>
     </body>
 </html>
